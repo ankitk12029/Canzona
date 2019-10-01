@@ -1,0 +1,171 @@
+ body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 90%;
+	margin:0 auto;
+}
+
+header {
+  background: #368BC1;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  max-width: 90px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFF;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  float: left;
+  padding: 0 2px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    margin: 1px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+.container_song{
+	margin: 30px 90px;
+	
+}
+
+#song_nam{
+	font-size:30px;
+	color: #F4FAFD;
+	/*padding-left:50px*/; 
+	/*margin: 40px 30px;*/
+	text-decoration: underline;
+	text-transform: uppercase;
+	/*text-shadow: 1px 1px white;*/
+}
+
+.song_img{
+	padding-right:30px;
+	float:left;
+}
+
+.song_video{
+	/*margin-left: 90px;
+	margin-right:20px;
+	margin-top:20px;*/
+	/*padding-left: 50px;*/
+	float:left;
+}
+
+.song_info{
+	font-size:18px;
+	font-weight: 400;
+	color: #F4FAFD;
+	margin-top: 20px;
+	/*max-width: 400px;*/
+	/*border:1px solid #F4FAFD ;
+	border-radius: 5px*/
+	/*padding:20px;*/
+	line-height: 90%;
+	letter-spacing: 0.1rem;
+
+}
+
+h2{
+	color: #F4FAFD;
+}
+
+.vl{
+	border-left: 1px solid #F4FAFD;
+  height:500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 350px;
+  
+}
+
+#lyrics{
+	padding-left:600px;
+}
+
+.reveiw{
+	padding-left: 600px;
+	padding-top: 50px
+}
+
+#comments{
+	font-size:1.3em;
+}
+
+#signin{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 10px;
+
+  position: relative;
+}

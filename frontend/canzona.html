@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Canzona</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+
+  body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+  background: #368BC1;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  max-width: 90px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+#signin{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 5px;
+
+  position: relative;
+}
+
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #FFF;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.trending {
+  padding-top: 30px;
+  padding-left: 30px;
+  color: #FFF;
+}
+
+div.gallery {
+  border: 1px;
+  max-width: 1280px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  float: left;
+  padding: 0 2px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    margin: 1px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="canzona.html"><img src="../images/logo.jpg" class="logo"></a>
+
+
+      <nav>
+        <ul>
+          <li><a href="canzona.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">REVIEWS</a></li>
+          <li><a href="#">Genre</a></li>
+          <li><input type="text" placeholder="SEARCH" font-size: 14px;></li>
+          <li><a href="form1.html" id="signin">SignIn / Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<div class="container" style="max-width:900px">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <a href="../frontend/reveiw.html"> <img src="../images/senorita.jpg" alt="Senorita" style="width:100%;"> </a>
+      </div>
+
+      <div class="item">
+        <a href="https://www.youtube.com/watch?v=dhYOPzcsbGM"> <img src="../images/onmyway.jpg" alt="On My Way" style="width:100%;"> </a>
+      </div>
+
+      <div class="item">
+        <a href="https://www.youtube.com/watch?v=jzD_yyEcp0M"> <img src="../images/friends.jpg" alt="Friends" style="width:100%;"> </a>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<h2 class="trending">Trending</h2>
+
+<div class="responsive" style="max-width:180px">
+  <div class="gallery">
+    <a target="_blank" href="hdyl.jpg">
+      <img src="../images/hdyl.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive" style="max-width:180px">
+  <div class="gallery" >
+    <a target="_blank" href="lover.jpg">
+      <img src="../images/lover.jpg">
+    </a>
+  </div>
+</div>
+
+<div class="responsive" style="max-width:180px">
+  <div class="gallery">
+    <a target="_blank" href="smalltalk.png">
+      <img src="../images/smalltalk.png" alt="Small Talk-Katy Perry">
+    </a>
+  </div>
+</div>
+
+<div class="responsive" style="max-width:180px">
+  <div class="gallery">
+    <a target="_blank" href="smileaway.png">
+      <img src="../images/slideaway.png" alt="Slide Away -Miley Cyrus">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive" style="max-width:180px">
+  <div class="gallery">
+    <a target="_blank" href="badboy.jpg">
+      <img src="../images/badboy.jpg" alt="Bad Boy">
+    </a>
+  </div>
+</div>
+
+<div class="responsive" style="max-width:180px">
+  <div class="gallery">
+    <a target="_blank" href="concalma.png">
+      <img src="../images/concalma.png" alt="Con Calma- Daddy Yankee">
+    </a>
+  </div>
+</div>
+
+<div class="responsive" style="max-width:180px">
+  <div class="gallery">
+    <a target="_blank" href="sucker.png">
+      <img src="../images/sucker.png" alt="Sucker - Jonas Brothers">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>

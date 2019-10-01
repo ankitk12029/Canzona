@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<LINK rel="stylesheet" type="text/css" href="../css/form1.css">
+<script>
+function validateForm(){
+var x = document.forms["myForm"]["fname"].value;
+var a = document.forms["myForm"]["username"].value;
+var y = document.forms["myForm"]["password1"].value;
+var z = document.forms["myForm"]["password2"].value;
+var b = document.forms["myForm"]["email"].value;
+var c = b.indexOf("@");
+var d = b.lastIndexOf(".");
+
+if (x == ""){
+alert("First name must be filled out");
+return false;
+}
+
+if (a ==""){
+alert("username must be filled out");
+return false;
+}
+
+if (b == ""){
+alert("email must be filled out");
+return false;
+}
+else if (c<1 || d<c+2 || d+2>=b.length){
+alert("please enter valid e-mail id");
+return false;
+}
+
+if (y == ""){
+alert("password must be filled out");
+return false;
+}
+else if (y.length<6){
+alert("password must be at least 6 character long");
+return false;
+}
+else if(z == "" || z != y){
+alert("password are not same");
+return false;
+}
+}
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+        	var radioValue = $("input[name='gender']:checked").val();
+            if(radioValue){
+                $gender= radioValue;
+            }
+        });
+    });
+</script>
+</HEAD>
+<BODY>
+<H1>CANZONA</H1>
+<DIV>
+<p class="para">Please fill in this form to create an account</p><br>
+<FORM name="myForm" onsubmit="return validateForm()" method="post" action="localhost/phpmyadmin/form1_add.php">
+ENTER YOUR NAME<BR>
+<INPUT TYPE="TEXT" PLACEHOLDER="FIRST NAME" id="fname">
+<INPUT TYPE="TEXT" PLACEHOLDER="LAST NAME" id="lname"><BR>
+ENTER USERNAME
+<INPUT TYPE="TEXT" name="user_name" id="user_name"><BR>
+<p class="cc">should have atleast 1  special character like !,@,#,$ and numbers </p>
+EMAIL ID
+<INPUT TYPE="TEXT" id="email_id"><BR>
+GENDER<BR>
+<INPUT TYPE="RADIO" name="gender" id="gender"  value="male" required>MALE
+<INPUT TYPE="RADIO" id="gender" name="gender" value="female" required >FEMALE<BR>
+ENTER PASSWORD:
+<INPUT TYPE="PASSWORD" name="password" id="password"><BR>
+<p class="cc">atleat 6 characters</p>
+RE-ENTER PASSWORD
+<INPUT TYPE="PASSWORD" name="password" id="password"><BR>
+<button type="submit" onsubmit="canzona.html">Submit </button>
+<p class="para">Already have an account?<a href="form2.html">SIGN IN</a></p>
+</FORM>
+</DIV>
+<script src="../js/form1_add.js" charset="utf-8"></script>
+</BODY>
+</HTML>

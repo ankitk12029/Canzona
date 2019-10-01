@@ -1,0 +1,56 @@
+input[type=text]{
+ width: 25%;
+ padding: 10px 12px;
+ margin: 30px 500px;
+ display: inline-block;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ box-sizing: border-box;
+}
+input[type=password]{
+width: 25%;
+padding: 10px 12px;
+margin: -5px 500px;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+input[type=submit]{
+width: 10%;
+padding: 10px 12px;
+margin: 130px 450px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+div{
+height: 500px;
+width: 1000px;
+margin:50px 190px;
+background-color:  #FFF9FA;
+border:5px solid #ffc4cd ;
+border-radius:15px;
+}
+body{
+background-image: url("music3.JPG");
+height: 100%;
+background-position:right;
+background-repeat: no-repeat;
+}
+h1{
+font-size: 60px;
+font-color: yellow;
+text-align: center;
+}
+p.cc{
+font-size: 20px;
+position: relative;
+left: 230px;
+bottom: -80px;
+}
+p.cd{
+font-size: 20px;
+position: relative;
+left: 300px;
+bottom: -45px;
+}
