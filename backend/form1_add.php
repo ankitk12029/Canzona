@@ -8,24 +8,23 @@ include "../backend/form1.php";
 // Check connection
 if ($conn->connect_error) {
   echo "Connection failed: " . $conn->connect_error;
-} else {
+}
+else {
 
-  if ( isset($_POST["user_name"]) && !empty($_POST["user_name"]) && isset($_POST["password"]) && !empty($_POST["password"])
-  && isset($_POST["fname"]) && !empty($_POST["fname"]) && isset($_POST["lname"]) && !empty($_POST["lname"]) && isset($_POST["email_id"]) && !empty($_POST["email_id"]) && isset($_POST["gender"]) && !empty($_POST["gender"]) ) {
+  if ( isset($_POST["user_name"]) && !empty($_POST["user_name"]) && isset($_POST["fname"]) && !empty($_POST["fname"]) && isset($_POST["lname"]) && !empty($_POST["lname"]) && isset($_POST["email_id"]) && !empty($_POST["email_id"]) && isset($_POST["gender"]) && !empty($_POST["gender"]) && isset($_POST["password"]) && !empty($_POST["password"]) ) {
 
     $user_name = $_POST["user_name"];
-    $password =  password_hash(mysqli_real_escape_string($conn, $_POST["password"]), PASSWORD_BCRYPT);
-    // $phno = $_POST["phno"];
     $fname = $_POST["fname"];
     $lname = $_POST["lname"];
     $email_id=$_POST["email_id"];
     $gender=$_POST["gender"];
+    $password =  password_hash(mysqli_real_escape_string($conn, $_POST["password"]), PASSWORD_BCRYPT);
 
-    $sql = "INSERT INTO user_details(fname, lname, user_name, password,email_id,gender)
-            VALUES ('$user_name','$password','$fname', '$lname', '$email_id','$gender')";
+    $sql = "INSERT INTO user_details(user_name,fname, lname, email_id,gender,password)
+            VALUES ('$user_name','$fname', '$lname','$email_id','$gender','$password')";
 
     if (!mysqli_query($conn, $sql)) {
-      echo statusMessage(500, "internal server error");
+      echo "internal server error";
       die('Error: ' . mysqli_error($conn));
 
     } else {
@@ -34,15 +33,13 @@ if ($conn->connect_error) {
       $res = [
         'register' => TRUE
       ];
-      echo json_encode([json_decode(statusMessage(200, "success")), $res]);
+      echo json_encode($res);
     }
 
   } else {
-    echo statusMessage(400, "bad request");
+    echo "bad request";
   }
 
 }
 
-
-
- ?>
+?>

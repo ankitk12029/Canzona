@@ -61,15 +61,15 @@ return false;
 <H1>CANZONA</H1>
 <DIV>
 <p class="para">Please fill in this form to create an account</p><br>
-<FORM name="myForm" onsubmit="return validateForm()" method="post" action="localhost/phpmyadmin/form1_add.php">
+<FORM name="myForm" onsubmit="return validateForm();" method="post" action="http://localhost/canzona/backend/form1_add.php">
 ENTER YOUR NAME<BR>
-<INPUT TYPE="TEXT" PLACEHOLDER="FIRST NAME" id="fname">
-<INPUT TYPE="TEXT" PLACEHOLDER="LAST NAME" id="lname"><BR>
+<INPUT TYPE="TEXT" PLACEHOLDER="FIRST NAME" name="fname">
+<INPUT TYPE="TEXT" PLACEHOLDER="LAST NAME" name="lname"><BR>
 ENTER USERNAME
 <INPUT TYPE="TEXT" name="user_name" id="user_name"><BR>
 <p class="cc">should have atleast 1  special character like !,@,#,$ and numbers </p>
 EMAIL ID
-<INPUT TYPE="TEXT" id="email_id"><BR>
+<INPUT TYPE="TEXT" name="email_id"><BR>
 GENDER<BR>
 <INPUT TYPE="RADIO" name="gender" id="gender"  value="male" required>MALE
 <INPUT TYPE="RADIO" id="gender" name="gender" value="female" required >FEMALE<BR>
@@ -77,8 +77,8 @@ ENTER PASSWORD:
 <INPUT TYPE="PASSWORD" name="password" id="password"><BR>
 <p class="cc">atleat 6 characters</p>
 RE-ENTER PASSWORD
-<INPUT TYPE="PASSWORD" name="password" id="password"><BR>
-<button type="submit" onsubmit="canzona.html">Submit </button>
+<INPUT TYPE="PASSWORD" id="password"><BR>
+<button type="submit" onclick="../forntend/form2.html">Submit </button>
 <p class="para">Already have an account?<a href="form2.html">SIGN IN</a></p>
 </FORM>
 </DIV>

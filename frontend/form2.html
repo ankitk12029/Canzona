@@ -2,18 +2,20 @@
 <html>
 <head>
 <title></title>
-<link rel="stylesheet" type="text/css" href="form2.css">
+<link rel="stylesheet" type="text/css" href="../css/form2.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/login.js"></script>
 </head>
 <body>
 <h1>CANZONA</h1>
 <div>
-<form>
-<P class="cc">ENTER YOUR USERNAME</p>
-<INPUT TYPE="TEXT"><BR>
-<P class="cd">ENTER PASSWORD</p>
-<input type="password"><br>
-<INPUT TYPE="SUBMIT" VALUE="SIGN IN">
-</form>
+<!-- <form action="http://localhost/canzona/backend/login.php" method="post"> -->
+<P class="cc" name="user_name">ENTER YOUR USERNAME</p>
+<INPUT TYPE="text" id="user_name" name="user_name" ><BR>
+<P class="cd" name="password">ENTER PASSWORD</p> 
+<input type="password" id="password" name="password"><br>
+<button type="button" name="button" id="user_details" onclick="login();" action="canzona.html">Login</button>
+<!-- </form> -->
 </div>
 </body>
 </html>
