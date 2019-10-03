@@ -9,14 +9,14 @@
 <body>
  <header>
     <p class="container">
-	<a href="canzona.html"><img src="logo.jpg" class="logo"></a>
+	<a href="canzona.html"><img src="../images/logo.jpg" class="logo"></a>
       <nav>
         <ul>
           <li><a href="canzona.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">REVIEWS</a></li>
           <li><a href="#">Genre</a></li>
-          
+
           <li><a href="form1.html" id="signin">SignIn / Login</a></li>
         </ul>
       </nav>
@@ -27,9 +27,9 @@
 <!-- <form action="http://localhost/canzona/backend/login.php" method="post"> -->
 <P class="cc" name="user_name">ENTER YOUR USERNAME</p>
 <INPUT TYPE="text" id="user_name" name="user_name" ><BR>
-<P class="cd" name="password">ENTER PASSWORD</p>
+<P class="cd">ENTER PASSWORD</p>
 <input type="password" id="password" name="password"><br>
-<button type="button" name="button" id="user_details" onclick="login();" action="canzona.html">Login</button>
+<button type="button" name="button" id="user_details" onclick="login(); window.localStorage.clear(); window.location.assign('../frontend/canzona.html');" action="canzona.html" align="center">Login</button>
 <!-- </form> -->
 </div>
 </body>

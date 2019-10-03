@@ -95,13 +95,13 @@ nav a:hover::before {
 
 .container_song{
 	margin: 30px 90px;
-	
+
 }
 
 #song_nam{
 	font-size:30px;
 	color: #F4FAFD;
-	/*padding-left:50px*/; 
+	/*padding-left:50px*/;
 	/*margin: 40px 30px;*/
 	text-decoration: underline;
 	text-transform: uppercase;
@@ -110,7 +110,7 @@ nav a:hover::before {
 
 .song_img{
 	padding-right:30px;
-	float:left;
+	/* float:left; */
 }
 
 .song_video{
@@ -118,7 +118,7 @@ nav a:hover::before {
 	margin-right:20px;
 	margin-top:20px;*/
 	/*padding-left: 50px;*/
-	float:left;
+	/* float:left; */
 }
 
 .song_info{
@@ -139,24 +139,24 @@ h2{
 	color: #F4FAFD;
 }
 
-.vl{
+/* .vl{
 	border-left: 1px solid #F4FAFD;
   height:500px;
   position: absolute;
   left: 50%;
   margin-left: -3px;
   top: 350px;
-  
+
+} */
+
+#rg_embed_link_4641031{
+	margin-left: -600px;
 }
 
-#lyrics{
-	padding-left:600px;
-}
-
-.reveiw{
+/* .reveiw{
 	padding-left: 600px;
 	padding-top: 50px
-}
+} */
 
 #comments{
 	font-size:1.3em;
@@ -164,8 +164,45 @@ h2{
 
 #signin{
   display: inline-block;
-  margin-left: 70px;
-  padding-top: 10px;
+  /* margin-left: 70px;
+  padding-top: 10px; */
 
   position: relative;
+}
+
+.swing :hover {
+    animation: swing ease-in-out 1s  infinite alternate;
+    transform-origin: center -20px;
+    /* float:left; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+
+@keyframes swing {
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
 }

@@ -20,7 +20,7 @@ function login() {
 
 			$.ajax({
 				type: "POST",
-				url: 'http://localhost/CANZONA/backend/login.php',
+				url: 'http://localhost/Canzona/backend/login.php',
 				data: data,
 				success: function(data) {
 					// console.log('done');
@@ -46,7 +46,3 @@ function login() {
 	}
 
 };
-
-
-
-

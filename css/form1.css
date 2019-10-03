@@ -28,7 +28,7 @@ margin: 40px 450px;
 border: 1px solid #ccc;
 border-radius: 5px;
 }
-div{
+/* div .info{
 height: 750px;
 width: 1000px;
 margin:50px 250px;
@@ -36,14 +36,14 @@ background-color: black;
 border:5px solid white;
 border-radius:15px;
 color:white;
+} */
+body {
+margin: 0;
+background: #222;
+font-family: 'Work Sans', sans-serif;
+font-weight: 800;
 }
-body{
-background-image: url("image3.JPG");
-height: 100%;
-background-position:left;
-background-repeat: no-repeat;
-backgroung-color:black;
-}
+
 h1{
 font-size: 60px;
 color: white;

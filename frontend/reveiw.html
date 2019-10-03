@@ -21,6 +21,10 @@
       color: #F4FAFD;
     }
   </style>
+
+  <script type="text/javascript" src="../js/comment_user.js">
+  </script>
+  <script src="../js/jquery.min.js"></script>
 </head>
 
 
@@ -45,11 +49,14 @@
 
 
 <div class="container_song" >
-  <div class="song_img"> 
+  <!-- <div class="song_img">
     <img src="../images/senorita.jpg" widht="250" height="200" align="margin-left">
-  </div>
+  </div> -->
+  <figure class="swing">
+    <img src="../images/senorita.jpg" widht="300" height="200" >
+  </figure>
   <h1 id="song_nam">
-    Señorita 
+    Señorita
   </h1>
   <div class="song_info" >
     <p>Singer -Single by <a href="http://www.shawnmendesofficial.com/">Shawn Mendes</a> and <a href="http://camilacabello.com/">Camila Cabello</a></p>
@@ -72,20 +79,22 @@
     <h2>Video</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Pkh8UtuejGw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div class="vl"></div>
-  
+  <!-- <div class="vl"></div> -->
+  <hr>
   <h2 id="lyrics">Lyrics</h2>
   <div id='rg_embed_link_4641031' class='rg_embed_link' data-song-id='4641031' style="padding-left: 600px">Read <a href='https://genius.com/Shawn-mendes-and-camila-cabello-senorita-lyrics'>“Señorita” by Shawn Mendes & Camila Cabello</a> on Genius</div> <script crossorigin src='//genius.com/songs/4641031/embed.js'></script>
+  <hr>
+  <!-- <form action="/html/tags/html_form_tag_action.cfm" method="post" class="reveiw"> -->
+  <div>
+    <h2>Username</h2>
+    <INPUT TYPE="text" id="uid" name="uid" ><BR>
+    <h2>Comments</h2>
+    <textarea  id="comments" rows="10" placeholder="Hey... say something.!!" cols="50">
 
-  <form action="/html/tags/html_form_tag_action.cfm" method="post" class="reveiw">
-    <div>
-      <h2>Comments</h2>
-      <textarea name="comments" id="comments" rows="10" cols="50">
-        Hey... say something!
-      </textarea>
-    </div>
-    <input type="submit" value="Submit">
-  </form>
+    </textarea>
+  </div>
+  <button type="button" style="size:50px;" id="comment_user" onclick="submits();" action="reveiw.html">Submit</button>
+  <!-- </form> -->
   </div>
 </body>
 </html>
