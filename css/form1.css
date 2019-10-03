@@ -31,20 +31,22 @@ border-radius: 5px;
 div{
 height: 750px;
 width: 1000px;
-margin:50px 190px;
-background-color: #FFF9FA;
-border:5px solid #ffc4cd;
+margin:50px 250px;
+background-color: black;
+border:5px solid white;
 border-radius:15px;
+color:white;
 }
 body{
-background-image: url("music3.JPG");
+background-image: url("image3.JPG");
 height: 100%;
-background-position:right;
+background-position:left;
 background-repeat: no-repeat;
+backgroung-color:black;
 }
 h1{
 font-size: 60px;
-font-color: yellow;
+color: white;
 text-align: center;
 }
 p.cc{
